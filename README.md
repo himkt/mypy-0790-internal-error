@@ -1,15 +1,17 @@
-## Reproduce
+## Code
 
-```sh
-bash repro.sh
+```python
+> cat main.py
+from typing import AnyStr
+
+
+def some_func(test_str: AnyStr):
+    cmdline: str | int = test_str
 ```
 
-## `repro.sh`
+## Reproduce steps
 
 ```sh
-> cat repro.sh
-#!/bin/sh
-
 python3 -m venv venv
 . venv/bin/activate
 
